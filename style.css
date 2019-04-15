@@ -1,0 +1,278 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#nav-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+#anchor1 {
+  position: fixed;
+  left: 60px;
+  top: 20px;
+}
+
+#navbar {
+  background-color: #222;
+  text-align: right;
+  padding: 20px 60px;
+}
+
+#navbar a {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#navbar button {
+  display: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: inherit;
+  font-size: inherit;
+  color: #efefef;
+  -webkit-transition: color 1s ease; /* Safari */
+  transition: color 1s ease;
+}
+
+.menu-anchor,
+.nav-anchor {
+  text-decoration: none;
+  color: #efefef;
+  -webkit-transition: color 1s ease; /* Safari */
+  transition: color 1s ease;
+}
+
+#navbar button:hover,
+#navbar button:focus,
+.nav-anchor:hover {
+  color: #3ff;
+}
+
+#welcome-section {
+  background-image: url("https://s3.envato.com/files/223573457/Preview_Image_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ddefef;
+  height: 85vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 0.5;
+}
+
+#welcome-section h1 {
+  font-size: 50px;
+}
+
+#welcome-section p {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#welcome-section img {
+  max-width: 50vh;
+  max-height: 50vh;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+#about {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#about h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+#about table {
+  width: 70%;
+}
+
+#about table, td {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+#projects {
+  background-color: #efefef;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+#projects h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#contact {
+  text-align: center;
+  padding-top: 60px;
+}
+
+#contact h1 {
+  font-size: 30px;
+}
+
+#contact table {
+  width: 50%;
+}
+
+#contact table, td {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+#contact img {
+  width: 48px;
+  height: 48px;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+}
+
+#contact img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 361px 361px;
+  grid-row-gap: 80px;
+  grid-column-gap: 200px;
+  justify-content: center;
+}
+
+.project-tile {
+  position: relative;
+  width: 361px;
+  height: 220px;
+  background-color: #5f5f5f;
+}
+
+.mask {
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  z-index: 1;
+  width: 362px;
+  height: 220px;
+  background-color: #000;
+  margin-top: 100px;
+  padding-top: 5px;
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+  transition: opacity 1s;
+}
+
+.desc{
+  position: absolute;
+  color: #fff;
+  top: 50px;
+  left: 80px;
+  width: 200px;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+  transition: opacity 700ms;
+}
+
+.desc h1 {
+  font-size: 25px !important;
+}
+
+.desc p {
+  position: absolute;
+  top: 80px;
+  left: 55px;
+  font-weight: bold;
+}
+
+.project-tile:hover > .desc {
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.project-tile:hover > .mask {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: #222;
+  width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #3ff;
+}
+
+.show {
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .container {
+    display: block;
+  }
+
+  .container * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container div {
+    margin-bottom: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar a {
+    display: none;
+  }
+  #navbar button {
+    display: initial;
+  }
+  .show {
+    display: block;
+  }
+}

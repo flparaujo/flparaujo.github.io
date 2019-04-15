@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Personal Portfolio Webpage</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="nav-div">
+      <a href="#" id="anchor1" class="nav-anchor">Felipe Araújo</a>
+      <nav id="navbar">
+        <a href="#about" class="nav-anchor">About</a>
+        <a href="#projects" class="nav-anchor">Projects</a>
+        <a href="#contact" class="nav-anchor">Contact</a>
+        <button onclick="showMenu()">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </nav>
+    </div>
+    <div class="dropdown-content" id="dropdown-menu">
+      <a href="#about" class="menu-anchor">About</a>
+      <a href="#projects" class="menu-anchor">Projects</a>
+      <a href="#contact" class="menu-anchor">Contact</a>
+    </div>
+    <section id="welcome-section">
+      <img src="https://s.cdpn.io/profiles/user/2950374/512.jpg?1551318376" alt="profile picture">
+      <h1>Felipe Araújo</h1>
+      <p>Computer Scientist</p>
+    </section>
+    <section id="about">
+      <h1>Skills</h1>
+      <table>
+        <tr>
+          <td>
+            <a href="https://icons8.com/icon/13679/logo-java-coffee-cup" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/java-coffee-cup-logo.png" alt="Java"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/40670/programação-c" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/c-programming.png" alt="C"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/40669/c++" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/c-plus-plus-logo.png" alt="C++"></a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://icons8.com/icon/13441/python" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/python.png" alt="Python"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/13406/sql" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/sql.png" alt="SQL"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/74402/mongodb" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/mongodb.png" alt="MongoDB"></a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://icons8.com/icon/20909/html-5" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/html-5.png" alt="HTML5"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/21278/css3" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/css3.png" alt="CSS3"></a></td>
+          <td>
+            <a href="https://icons8.com/icon/108784/javascript" target="_blank">
+            <img src="https://img.icons8.com/color/100/000000/javascript.png" alt="Javascript"></a></td>
+        </tr>
+      </table>
+    </section>
+    <section id="projects">
+      <h1>Some projects</h1>
+      <div class="container">
+        <a href="https://codepen.io/felipearaujo/pen/Mxejmp" target="_blank">
+        <div class="project-tile">
+          <img src="https://imgbbb.com/images/2019/03/18/screen1.png" alt="">
+          <div class="mask"></div>
+          <div class="desc">
+            <h1>Tribute page</h1>
+            <p>click to see</p>
+          </div>
+        </div>
+        </a>
+        <a href="https://codepen.io/felipearaujo/pen/eXdBzM" target="_blank">
+        <div class="project-tile">
+          <img src="https://imgbbb.com/images/2019/03/18/screen2.png" alt="">
+          <div class="mask"></div>
+          <div class="desc">
+            <h1>Survey form</h1>
+            <p>click to see</p>
+          </div>
+        </div>
+        </a>
+        <a href="https://codepen.io/felipearaujo/pen/vPemEL" target="_blank">
+        <div class="project-tile">
+          <img src="https://imgbbb.com/images/2019/03/18/screen3.png" alt="">
+          <div class="mask"></div>
+          <div class="desc">
+            <h1>Product page</h1>
+            <p>click to see</p>
+          </div>
+        </div>
+        </a>
+        <a href="https://codepen.io/felipearaujo/pen/ywvdXx" target="_blank">
+        <div class="project-tile">
+          <img src="https://imgbbb.com/images/2019/03/18/screen4.png" alt="">
+          <div class="mask"></div>
+          <div class="desc">
+            <h1>Documentation page</h1>
+            <p>click to see</p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Contact me</h1>
+      <p>I am always ready for a new challenge</p>
+      <table>
+        <tr>
+          <td><a href="http://www.linkedin.com/in/felipe-andrade-9b2b59152/" id="profile-link" target="_blank">
+            <img src="https://img.icons8.com/color/72/000000/linkedin.png"></a></td>
+          <td><a href="">
+            <img src="https://img.icons8.com/color/72/000000/instagram-new.png"></a></td>
+          <td><a href="">
+            <img src="https://img.icons8.com/color/72/000000/facebook.png"></a></td>
+        </tr>
+      </table>
+    </section>
+    <footer>© 2019, Felipe Araújo</footer>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
